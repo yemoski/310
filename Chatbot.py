@@ -5,6 +5,7 @@ from app import *
 from NerStanza import *
 from POStrack import *
 from Sports import sportquestions
+from Twitter import get_tweet
 
 name = "Harvie"
 resp = ""
@@ -59,6 +60,12 @@ def getResponse(question, pq):
                 resp = sportquestions.getsportqs(question)
             else:
                 resp = "Ready for sports questions"
+        elif "twitter" in question or "twitter" in pq:
+            if "twitter" in pq:
+                resp = get_tweet(question)
+            else:
+                resp = "Enter the username of a famous person"
+                return resp
 
         elif question == "ask me a question" or pq == "ask me a question":         
             if pq == "ask me a question":
