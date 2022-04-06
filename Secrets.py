@@ -36,6 +36,7 @@ def get_random_tracks():
                             )
 
     response_json = response.json()
+    print(response_json)
     tracks = [
         track for track in response_json['tracks']['items']
     ]
@@ -46,7 +47,11 @@ def get_random_tracks():
 random_tracks = get_random_tracks()
 #print(get_random_tracks())
 track_names = [track['name'] for track in random_tracks]
+artist_names = [track['artists'][0]['name'] for track in random_tracks]
 print(track_names)
+print(artist_names)
+
+
 
 
 
@@ -55,13 +60,12 @@ print(track_names)
 with open("tracknames.txt","w", encoding="utf-8") as f:
     for i in track_names:
         f.write(i+"\n")
-#index =randrange(2,19)
-#print(index)
-#print(track_names[index])
-#print(random.choice(track_names))
-#print(artist_names)
-###################
 
+
+
+with open("artistnames.txt","w", encoding="utf-8") as f:
+    for i in artist_names:
+        f.write(i+"\n")
 
 
 

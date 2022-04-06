@@ -7,6 +7,8 @@ from POStrack import *
 from Sports import sportquestions
 from Twitter import get_tweet
 from Spotify import get_track
+from Spotify import get_artist_name
+from Spotify import get_randindex
 
 name = "Harvie"
 resp = ""
@@ -63,16 +65,18 @@ def getResponse(question, pq):
                 resp = "Ready for sports questions"
         elif "twitter" in question or "twitter" in pq:
             if "twitter" in pq:
-                resp = get_tweet(question)
+                resp = question + " says " + get_tweet(question)
+                return resp
             else:
                 resp = "Enter the username of a famous person"
                 return resp
         elif "song" in question or "song" in pq:
-            if "song" in pq:
-                resp = get_track()
-            else:
-                resp = "Ready to recommend a song"
-                return resp
+            get_randindex()
+
+            resp = get_track() + " by " + get_artist_name()
+            return resp
+
+
 
         elif question == "ask me a question" or pq == "ask me a question":         
             if pq == "ask me a question":
