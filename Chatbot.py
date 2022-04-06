@@ -6,6 +6,7 @@ from NerStanza import *
 from POStrack import *
 from Sports import sportquestions
 from Twitter import get_tweet
+from Spotify import get_track
 
 name = "Harvie"
 resp = ""
@@ -65,6 +66,12 @@ def getResponse(question, pq):
                 resp = get_tweet(question)
             else:
                 resp = "Enter the username of a famous person"
+                return resp
+        elif "song" in question or "song" in pq:
+            if "song" in pq:
+                resp = get_track()
+            else:
+                resp = "Ready to recommend a song"
                 return resp
 
         elif question == "ask me a question" or pq == "ask me a question":         
