@@ -70,9 +70,19 @@ Ability to ask the user questions, and respond positively or negatively based on
 
 ## Individual Project section Features
 ### Getting song recommendations from spotify using the Spotify Api.
-This
+To use the somg recommendation tool, you ask the the bot any thing that has song in it like "Recommend me a song!" , "What song should i listen to?" etc. It does not have to exactly the same sentence, it just needs to have "song" in the input.
+Then the bot then recommends a song to the user along with the artist name.
+After the bot prints out the song, Spotify mode has been deactivated to activate it you have to repeat the steps again i.e ask it a question that has "song" in it. 
+
+![image](https://user-images.githubusercontent.com/45835101/162301238-734a6e77-3868-4c19-b396-043df3cda7b9.png)
 
 ### Getting the latest topic or tweet from anyone of your choice using the twitter Api.
+To get the latest tweet from your favorite celebrity, you ask the bot any input that has twitter in it like "What is the latest tweet on twitter", " What is happening on Twitter?" etc. It does not have to be exactly the same sentence, the user input just needs to contain "twitter" in it.
+After activating Twitter mode, the bot would ask for the twitter handle of the person you want to get their latest tweet, after you enter the twitter handle, the bot should print out their latest tweet.
+After the bot prints out their latest tweet, twitter mode has been deactivated to activate it you have to repeat the steps again i.e ask it a question that has "twitter" in it. 
+
+![image](https://user-images.githubusercontent.com/45835101/162304444-b9109ed3-6175-4f25-a000-1e64ceadb9a8.png)
+
 
 
 
