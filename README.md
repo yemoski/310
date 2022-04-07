@@ -68,11 +68,11 @@ More error handling to guide user input
 
 Ability to ask the user questions, and respond positively or negatively based on simple key words.
 
-##Individual Project section Features
-###Getting song recommendations from spotify using the Spotify Api.
+## Individual Project section Features
+### Getting song recommendations from spotify using the Spotify Api.
 This
 
-###Getting the latest topic or tweet from anyone of your choice using the twitter Api.
+### Getting the latest topic or tweet from anyone of your choice using the twitter Api.
 
 
 
